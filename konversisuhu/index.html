@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temp. Converter By Fendy</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
-
 </head>
 <body>
     <main>
@@ -25,9 +23,9 @@
             </header>
 
             <article>
-                <textarea id="inputcelcius">Input Celcius:</textarea>
+                <textarea id="inputcelcius"></textarea>
                 <br>
-                <button id="convert">Convert</button>
+                <button id="convert" onclick="convert()">Convert</button>
                 <button id="reset">Reset</button>
                 <button id="reverse">Reverse</button>
             </article>
@@ -41,7 +39,7 @@
             </header>
 
             <article>
-                <textarea id="output">Output Fahrenheit:</textarea>
+                <textarea id="outputfahrenheit" readonly></textarea>
             </article>
         </section>
 
@@ -53,7 +51,7 @@
             </header>
 
             <article>
-                <textarea>Rumus akan ditampilkan disini.</textarea>
+                <textarea id="hasilkalkulasi" readonly></textarea>
             </article>
         </section>
         <section class="equation">
@@ -66,27 +64,25 @@
                     Suhu 'S' dalam derajat Fahrenheit (&deg;F) sama dengan suhu 'S' dalam derajat Celcius (&deg;C) dikali 9/5 dan ditambah 32.
                 </p>
                 <h2 id="equation">
-                    S
-                    <sub>(&deg;F)</sub>
-                    =
-                    (S<sub>(&deg;C) &times;</sub>
-                    9/5)
-                    + 32
+                    S<sub>(&deg;F)</sub>
+                    <span class="eq">=</span>
+                    <span class="eq">(</span>S<sub>(&deg;C) &times;</sub>
+                    <span class="eq">9/5)</span>
+                    <span class="eq">+ 32</span>
                 </h2>
                 <p>atau:</p>
                 <h2 id="equation">
-                    S
-                        <sub>(&deg;F)</sub>
-                        =
-                        (S<sub>(&deg;C) &times;</sub>
-                        1,8)
-                        + 32
-                    </p>
+                    S<sub>(&deg;F)</sub>
+                    <span class="eq">=</span>
+                    <span class="eq">(</span>S<sub>(&deg;C) &times;</sub>
+                    <span class="eq">1,8)</span>
+                    <span class="eq">+ 32</span>
                 </h2>
             </article>
 
         </section>
     </main>
    
+    <script src="js/script.js"></script>
 </body>
 </html>
