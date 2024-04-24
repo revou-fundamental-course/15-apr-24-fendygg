@@ -14,34 +14,68 @@
         </header>
         <br>
         <section class="mainsection">
-            <p>Input suhu derajat Celcius (&deg;C) didalam kotak dibawah, lalu klik tombol Convert untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F).</p>
+            <p>Ketikkan nilai suhu derajat Celsius (&deg;C) didalam kotak dibawah, lalu klik tombol Convert untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F).
+            </p>
+            <p>
+                Klik tombol Reverse untuk memutarbalikkan konversi menjadi dari Fahrenheit (&deg;F) ke Celsius (&deg;C).
+            </p>
         </section>
                    
-        <section class="celcius">
-            <header>
-                <h2>Celsius (&deg;C):</h2>
-            </header>
+        <div id="ctof">
+            <section class="celcius">
+                <header>
+                    <h2>Celsius (&deg;C):</h2>
+                </header>
+    
+                <article>
+                    <textarea id="inputcelcius" placeholder="Masukkan Nilai Celsius (&deg;C)" type="number"></textarea>
+                    <br>
+                    <button id="convert" onclick="convert()">Convert</button>
+                    <button id="reset" onclick="reset()">Reset</button>
+                    <button id="reverse" onclick="reverse()">Reverse</button>
+                </article>
+            </section>
+    
+            <section class="fahrenheit">
+                <header>
+                    <h2>
+                        Fahrenheit (&deg;F):
+                     </h2>
+                </header>
+    
+                <article>
+                    <textarea id="outputfahrenheit" placeholder="Hasil Konversi (&deg;F)" readonly></textarea>
+                </article>
+            </section>
+        </div>
 
-            <article>
-                <textarea id="inputcelcius" placeholder="Masukkan Nilai Celsius (&deg;C)"></textarea>
-                <br>
-                <button id="convert" onclick="convert()">Convert</button>
-                <button id="reset" onclick="reset()">Reset</button>
-                <button id="reverse" onclick="reverse()">Reverse</button>
-            </article>
-        </section>
-
-        <section class="fahrenheit">
-            <header>
-                <h2>
-                    Fahrenheit (&deg;F):
-                 </h2>
-            </header>
-
-            <article>
-                <textarea id="outputfahrenheit" placeholder="Hasil Konversi (&deg;F)" readonly></textarea>
-            </article>
-        </section>
+        <div id="ftoc">
+            <section class="fahrenheit">
+                <header>
+                    <h2>Fahrenheit (&deg;F):</h2>
+                </header>
+    
+                <article>
+                    <textarea id="inputfahrenheit" placeholder="Masukkan Nilai Fahrenheit (&deg;F)" type="number"></textarea>
+                    <br>
+                    <button id="convert" onclick="convert()">Convert</button>
+                    <button id="reset" onclick="reset()">Reset</button>
+                    <button id="reverse" onclick="reverse()">Reverse</button>
+                </article>
+            </section>
+    
+            <section class="celcius">
+                <header>
+                    <h2>
+                       Celsius (&deg;C):
+                     </h2>
+                </header>
+    
+                <article>
+                    <textarea id="outputcelcius" placeholder="Hasil Konversi (&deg;C)" readonly></textarea>
+                </article>
+            </section>
+        </div>
         
         <section class="carakalkulasi">
             <header>
@@ -49,7 +83,7 @@
             </header>
 
             <article>
-                <textarea id="hasilkalkulasi" placeholder="Rumus Cara Menghitung" readonly></textarea>
+                <textarea id="hasilkalkulasi" placeholder="Rumus Cara Menghitung Akan Ditampilkan Disini" readonly></textarea>
             </article>
         </section>
 

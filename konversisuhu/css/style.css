@@ -90,3 +90,7 @@ sub {
 .eq {
     font-style: normal;
 }
+
+#ftoc {
+    display: none;
+}
