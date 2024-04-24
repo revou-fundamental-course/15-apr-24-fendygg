@@ -79,6 +79,8 @@ button {
 
 #equation {
     font-style: italic;
+    font-size: 25px;
+    font-weight: bolder;
 }
 
 sub {
